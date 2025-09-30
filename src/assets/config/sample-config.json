@@ -1,0 +1,33 @@
+{
+  "widgets": [
+    {
+      "type": "grid",
+      "dataSource": "api/users",
+      "properties": {
+        "columns": ["id", "name", "email", "address"],
+        "sortable": true,
+        "filterable": true
+      }
+    },
+    {
+      "type": "chart",
+      "dataSource": "api/sales",
+      "properties": {
+        "chartType": "bar",
+        "xAxis": "month",
+        "yAxis": "sales",
+        "title": "Monthly Sales"
+      }
+    },
+    {
+      "type": "chart",
+      "dataSource": "api/revenue",
+      "properties": {
+        "chartType": "line",
+        "xAxis": "date",
+        "yAxis": "revenue",
+        "title": "Revenue Trend"
+      }
+    }
+  ]
+}

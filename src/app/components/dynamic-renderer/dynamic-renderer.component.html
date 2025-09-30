@@ -1,0 +1,6 @@
+<div class="dynamic-renderer" *ngIf="config">
+  <div *ngFor="let widget of config.widgets" class="widget-container">
+    <app-grid *ngIf="widget.type === 'grid'" [config]="widget"></app-grid>
+    <app-chart *ngIf="widget.type === 'chart'" [config]="widget"></app-chart>
+  </div>
+</div>
